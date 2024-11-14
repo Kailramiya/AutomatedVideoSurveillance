@@ -23,7 +23,7 @@ To install the required Python libraries, you can run:
 
 ```bash
 pip install opencv-python face_recognition python-telegram-bot
-
+```
 Setup Instructions:
 Telegram Bot Setup:
 
