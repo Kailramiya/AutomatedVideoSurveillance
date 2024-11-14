@@ -23,3 +23,34 @@ To install the required Python libraries, you can run:
 
 ```bash
 pip install opencv-python face_recognition python-telegram-bot
+
+Setup Instructions:
+Telegram Bot Setup:
+
+Create a Telegram bot using BotFather on Telegram.
+Replace the TELEGRAM_BOT_TOKEN in the script with your bot's token.
+Family Member Images:
+
+Store images of family members in a folder. These images will be used to recognize family members.
+Modify the path to the family member images in the code.
+Visitor Images:
+
+The system stores images of visitors in specific folders. Each folder corresponds to a visitor's name (e.g., "milkman", "delivery").
+The script will check for unknown faces in these folders and send alerts via Telegram.
+How It Works:
+The system continuously captures video frames from your webcam.
+The faces in the frames are recognized using the face_recognition library.
+If a face is recognized as a family member, the program proceeds without any alerts.
+If the face is unknown, an alert with the visitor's photo is sent to your Telegram bot.
+If the visitor's folder exists, the bot sends a message saying, "Milkman has arrived" (example).
+Usage:
+Run the script by executing:
+bash
+Copy code
+python main.py
+The bot will start monitoring for visitors and send alerts when unknown people arrive.
+License:
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Author- Aman Kumar
+Email- amankundu369@gmail.com
