@@ -9,7 +9,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # Replace with your actual token
-TELEGRAM_BOT_TOKEN = '7863579800:AAHjbGcJg9spDWboIKodtwwAT-vmkubUBK4'  # Update with your bot token
+TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN_NUMBER'  # Update with your bot token
 family_faces = {}
 visitor_encodings = {}
 visitors_folder = r"C:\Users\amank\OneDrive\Desktop\home security\visitor_images"
